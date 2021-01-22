@@ -2,7 +2,7 @@
 
 ![web] ![top_language] ![repo-size]
 
-### 😺 Github Explorer é uma plataforma para explorar repositórios no GitHub desenvolvida durante o bootcamp GoStack da @Rocketseat.
+### 😺 GithubExplorer é uma plataforma para explorar repositórios no GitHub desenvolvida durante o bootcamp GoStack da @Rocketseat.
 
 </div>
 
