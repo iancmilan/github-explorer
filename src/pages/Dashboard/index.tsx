@@ -5,7 +5,7 @@ import { FiChevronRight } from 'react-icons/fi';
 import logoImg from '../../assets/logo.svg';
 import api from '../../services/api';
 
-import { Title, Form, Repositories } from './styles';
+import { Title, Form, Repositories, Error } from './styles';
 
 // Na tipagem não preciso colocar tudo o que a api retorna, devo cria-la somente com as informações que irei utilizar
 interface Repository {
@@ -19,6 +19,7 @@ interface Repository {
 
 const Dashboard: React.FC = () => {
   const [newRepo, setNewRepo] = useState('');
+  const [inputError, setInputError] = useState('');
   const [repositories, setRepositories] = useState<Repository[]>([]);
 
   async function handleAddRepository(
@@ -27,19 +28,29 @@ const Dashboard: React.FC = () => {
     // adicao de um novo repositorio
     event.preventDefault();
 
-    const response = await api.get<Repository>(`repos/${newRepo}`);
+    if (!newRepo) {
+      setInputError('Digite autor/nome do respositório.');
+      return;
+    }
 
-    const repository = response.data;
+    try {
+      const response = await api.get<Repository>(`repos/${newRepo}`);
 
-    setRepositories([...repositories, repository]);
-    setNewRepo('');
+      const repository = response.data;
+
+      setRepositories([...repositories, repository]);
+      setNewRepo('');
+      setInputError('');
+    } catch (err) {
+      setInputError('Erro na busca do repositório.');
+    }
   }
   return (
     <>
       <img src={logoImg} alt="Github Explorer" />
       <Title>Explore repositórios no Github</Title>
-
-      <Form onSubmit={handleAddRepository}>
+      {/* hasError é uma propriedade do tipo Boolean, em !!inputError as negações transformam o resultado em truthy(true) ou falsy(false), se inputError for vazio a primeira negação vai transformar ele em true(pois era falsy) e a segunda negação em false, aí o resultado será que hasError é false. */}
+      <Form hasError={!!inputError} onSubmit={handleAddRepository}>
         <input
           value={newRepo}
           onChange={e => setNewRepo(e.target.value)}
@@ -47,6 +58,8 @@ const Dashboard: React.FC = () => {
         />
         <button type="submit">Pesquisar</button>
       </Form>
+
+      {inputError && <Error>{inputError}</Error>}
 
       <Repositories>
         {repositories.map(repository => (
