@@ -2,13 +2,24 @@
 
 ![web] ![top_language] ![repo-size]
 
+</div>
+
 ### Projeto desenvolvido durante o GoStack da [Rocketseat] utilizando a tecnologia **ReactJS**.
 
-</div>
 
 ## :bookmark: Sobre
 
 **GithubExplorer** é uma plataforma para explorar repositórios no GitHub.
+
+## :computer: Layout da aplicação
+
+### Dashboard
+
+![Dashboard](.github/github-explorer-dashboard.png)
+
+### Informações do repositório
+
+![Repository](.github/github-explorer-repository.png)
 
 ## :rocket: Tecnologias
 
@@ -25,7 +36,7 @@
 
 ```sh
   # vá para a pasta do projeto
-  $ cd web
+  $ cd github-explorer
   # instale as dependências do projeto
   $ yarn # ou npm install
 
