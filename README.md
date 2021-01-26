@@ -1,5 +1,7 @@
 <div align="center">
-
+  
+<img alt="Icon" title="Icon" src="src/assets/logo.svg" width="220px">
+  
 ![web] ![top_language] ![repo-size]
 
 </div>
