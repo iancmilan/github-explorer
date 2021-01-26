@@ -6,7 +6,7 @@
 
 </div>
 
-### Projeto desenvolvido durante o GoStack da [Rocketseat] utilizando a tecnologia **ReactJS**.
+### Projeto desenvolvido durante o bootcamp GoStack da [Rocketseat] utilizando a tecnologia **ReactJS**.
 
 
 ## :bookmark: Sobre
