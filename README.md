@@ -2,7 +2,7 @@
   
 <img alt="Icon" title="Icon" src="src/assets/logo.svg" width="400px">
   
-![web] ![top_language] ![repo-size]
+![web] ![top_language] ![repo-size] ![license]
 
 </div>
 
@@ -55,4 +55,5 @@ Esse projeto está sob licensa [MIT](LICENSE).
 <!-- Bagdes -->
 [web]: https://img.shields.io/badge/web-React-63DAFA?style=flat-square
 [top_language]: https://img.shields.io/github/languages/top/iancmilan/github-explorer?style=flat-square
+[license]: https://img.shields.io/github/license/iancmilan/github-explorer?style=flat-square
 [repo-size]: https://img.shields.io/github/repo-size/iancmilan/github-explorer?style=flat-square
