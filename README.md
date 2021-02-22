@@ -1,6 +1,6 @@
 <div align="center">
   
-<img alt="Icon" title="Icon" src="src/assets/logo.svg" width="400px">
+<img alt="Icon" title="Icon" src="src/assets/logo.svg" width="401px">
   
 ![web] ![top_language] ![repo-size] ![license]
 
