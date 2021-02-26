@@ -1,6 +1,6 @@
 <div align="center">
   
-<img alt="Icon" title="Icon" src="src/assets/logo.svg" width="401px">
+<img alt="Icon" title="Icon" src=".github/github-explorer.png">
   
 ![web] ![top_language] ![repo-size] ![license]
 
@@ -53,7 +53,7 @@ Esse projeto está sob licensa [MIT](LICENSE).
 [Rocketseat]: https://rocketseat.com.br/
 
 <!-- Bagdes -->
-[web]: https://img.shields.io/badge/web-React-63DAFA?style=flat-square
-[top_language]: https://img.shields.io/github/languages/top/iancmilan/github-explorer?style=flat-square
-[license]: https://img.shields.io/github/license/iancmilan/github-explorer?style=flat-square
-[repo-size]: https://img.shields.io/github/repo-size/iancmilan/github-explorer?style=flat-square
+[web]: https://img.shields.io/badge/web-React-e5e5e5?style=flat-square&labelColor=121214
+[top_language]: https://img.shields.io/github/languages/top/iancmilan/github-explorer?style=flat-square&color=e5e5e5&labelColor=121214
+[license]: https://img.shields.io/github/license/iancmilan/github-explorer?style=flat-square&color=e5e5e5&labelColor=121214
+[repo-size]: https://img.shields.io/github/repo-size/iancmilan/github-explorer?style=flat-square&color=e5e5e5&labelColor=121214
